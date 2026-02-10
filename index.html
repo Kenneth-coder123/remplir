@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Formulaire</title>
+        <style>
+            body{
+                background-color:white ;
+                color:black;
+                
+            }
+            h1{
+                text-align: center;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="mailto:komikennysamuelkokodoko@gmail.com" method="post" enctype="text/plain">
+            <h1>FORMULAIRE D'IDENTIFICATION</h1><br>
+            <strong>Veuillez tout remplir avant d'appuyer sur la touche "ENTRER"</strong>
+            <fieldset>
+                <legend>Etat civil</legend>
+                    Nom: <input type="text" placeholder="Entrez votre nom..." name="Nom"><br><br>
+                    Premons: <input type="texte" placeholder="Entrez vos prenoms ..." name="prenoms" ><br><br>
+                    Age: <input type="number" min="0" placeholder="Age..." name="Age"><br><br>
+                    Adresse: <input type="texte" placeholder="Pays-Ville-Quartier..."name="Adresse" ><br><br>
+                    Numero de telephone: <input type="texte" placeholder="Entrez votre numero..."name="Numero" ><br><br>
+                     
+            </fieldset>
+            <fieldset>
+                <legend>Scolarite</legend>
+                Classe:
+                <select name="annee">
+                    <option>L1</option>
+                    <option>L2</option>
+                    <option>L3</option>
+                </select><br><br>
+                Filiere:
+                <select name="filiere">
+                    <option>Tronc commun</option>
+                    <option>Genie logiciel et SI</option>
+                    <option>Systemes et resaux</option>
+                    <option>IA et BIG DATA</option>
+                </select><br><br>
+
+                Groupe:<br>
+                <input type="radio" name="groupe" value="A">A ou 1<br>
+                <input type="radio" name="groupe" value="B">B ou 2<br>
+                <input type="radio" name="groupe" value="C">C ou 3<br>
+                <input type="radio" name="groupe" value="D">D ou 4<br>
+                <input type="radio" name="groupe" value="E">E ou 5<br>
+                <input type="radio" name="groupe" value="F">F ou 6<br>
+                <input type="radio" name="groupe" value="G">G ou 7<br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Orientation</legend>
+                Que voulez vous faire apres votre licence?<br><br>
+                <input type="radio" name="AFTER" value="MASTER"> Continuer pour le master
+                Dans le domaine de: <input type="text"name="j1"><br><br>
+                <input type="radio" name="AFTER" value="formation"> Continuer pour une formation
+                Dans le domaine de: <input type="text"name="j2"><br><br>
+                <input type="radio" name="AFTER"value="Autre">Autre: <input type="text" placeholder="Veuillez nous en dire plus"name="j3">
+            </fieldset>
+            <fieldset>
+                <legend>Commentaires</legend>
+                <textarea rows="10" cols="50" name="Commentaires"></textarea>
+            </fieldset><br><br><br>
+            <input type="submit" value="envoyer votre formulaire">
+            <input type="reset" value ="Remise a zero" >
+        </form>
+        <strong>Vous serez rediriger vers votre email apres l'appui du button envoyer! veuillez envoyer l'email.</strong>
+    </body>
+</html>
